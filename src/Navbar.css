@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 70px;
+  /* border: 1px solid orange; */
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #3c3c43b3;
+}
+
+.navbar--logo-title-container {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.navbar--logo {
+  height: 24px;
+  margin-right: 10px;
+}
+
+.navbar--title {
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+
+.navbar--search-box {
+  /* height: 22px; */
+  display: flex;
+  align-items: center;
+  background: #f6f6f7;
+  color: #3c3c43b3;
+  border-radius: 10px;
+  padding: 10px 10px;
+  font-size: 13px;
+  font-weight: 400;
+  transition: transform 250ms;
+}
+
+.navbar--search-box:hover {
+  border: 1px solid #646cff;
+  transform: scale(1.05);
+  cursor: pointer;
+  /* transition: transform 250ms; */
+}
+
+.fa-search {
+  margin-right: 10px;
+}
+
+.search-title {
+  margin-right: 20px;
+}
+
+.search-shortcut {
+  font-size: 12px;
+  border: 1px lightgray solid;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.navbar--menu-items {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.navbar--items {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar--item {
+  margin-right: 25px;
+}
+
+.navbar--item a {
+  text-decoration: none;
+  list-style: none;
+  color: #3c3c43b3;
+}
+
+.navbar--separator {
+  font-weight: 200;
+  color: lightgray;
+}
+
+.navbar--language-selector {
+  margin: 0px 25px 0px 25px;
+  cursor: pointer;
+}
+
+/* TOGGLER DARK MODE */
+
+.toggler {
+  display: flex;
+  align-items: center;
+  margin: 0px 20px 0 20px;
+}
+
+.toggler p {
+  font-size: 0.625rem;
+  font-weight: 600;
+}
+
+.toggler--slider {
+  width: 35px;
+  height: 18px;
+  background-color: #3c3c434a;
+  border-radius: 2rem;
+  margin-inline: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid lightgray;
+  box-sizing: content-box;
+}
+
+nav.dark .toggler--slider {
+  border-color: white;
+  background-color: #f5f5f5;
+}
+
+.toggler--slider--circle {
+  height: 17px;
+  width: 17px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+nav.dark .toggler--slider--circle {
+  background-color: black;
+}
+
+.toggler--light {
+  color: #2b283a;
+}
+
+nav.dark .toggler--light {
+  color: #918e9b;
+}
+
+.toggler--dark {
+  color: #d5d4d8;
+}
+
+nav.dark .toggler-dark {
+  color: #ffffff;
+}
+
+nav.dark .toggler--slider {
+  justify-content: flex-end;
+}
+
+/* TOGGLER DARK ENDS HERE */
+
+.social-media-icon {
+  font-size: 25px;
+  color: #3c3c43eb;
+  margin-right: 20px;
+  color: #3c3c43b3;
+  cursor: pointer;
+}
