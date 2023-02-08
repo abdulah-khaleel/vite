@@ -89,6 +89,10 @@
   margin-right: 25px;
 }
 
+.navbar--item a:hover {
+  color: #646cff;
+}
+
 .navbar--item a {
   text-decoration: none;
   list-style: none;
@@ -171,9 +175,14 @@ nav.dark .toggler--slider {
 /* TOGGLER DARK ENDS HERE */
 
 .social-media-icon {
-  font-size: 25px;
+  font-size: 20px;
   color: #3c3c43eb;
   margin-right: 20px;
   color: #3c3c43b3;
   cursor: pointer;
+}
+
+.social-media-icon:hover {
+  color: #252528b3;
+  transition: 200ms;
 }
