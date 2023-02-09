@@ -29,19 +29,27 @@ function Navbar() {
             <a href="#">Plugins</a>
           </li>
           <li className="navbar--item">
-            <a href="#">Resources</a>
+            <a href="#">
+              Resources &#160;<i class="fas fa-angle-down"></i>
+            </a>
           </li>
           <li className="navbar--item">
-            <a href="#">Version</a>
+            <a href="#">
+              Version &#160;<i class="fas fa-angle-down"></i>
+            </a>
           </li>
         </ul>
         <span className="navbar--separator">|</span>
-        <p className="navbar--language-selector">EN</p>
+        <p className="navbar--language-selector">
+          EN &#160;<i class="fas fa-angle-down"></i>
+        </p>
         <span className="navbar--separator">|</span>
         <div className="toggler">
           {/* <p className="toggler--light">Light</p> */}
           <div className="toggler--slider">
-            <div className="toggler--slider--circle"></div>
+            <div className="toggler--slider--circle">
+              <i class="fas fa-adjust"></i>
+            </div>
           </div>
           {/* <p className="toggler--dark">Dark</p> */}
         </div>

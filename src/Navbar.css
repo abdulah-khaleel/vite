@@ -109,6 +109,10 @@
   cursor: pointer;
 }
 
+.navbar--language-selector:hover {
+  color: #646cff;
+}
+
 /* TOGGLER DARK MODE */
 
 .toggler {
@@ -146,6 +150,14 @@ nav.dark .toggler--slider {
   width: 17px;
   background-color: white;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-adjust {
+  font-size: 12px;
+  opacity: 60%;
 }
 
 nav.dark .toggler--slider--circle {

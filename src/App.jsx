@@ -4,6 +4,7 @@ import "./App.css";
 import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Sponsors from "./Sponsors";
+import Footer from "./Footer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <Hero />
       <Sponsors />
+      <Footer />
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
