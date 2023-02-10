@@ -194,6 +194,10 @@ h1 {
   border-radius: 12px;
 }
 
+.dark-hero .feature-box {
+  background-color: #252529;
+}
+
 .feature-icon {
   width: 48px;
   height: 48px;
@@ -206,12 +210,20 @@ h1 {
   margin-bottom: 12px;
 }
 
+.dark-hero .feature-icon {
+  background-color: #1e1e20;
+}
+
 .feature-title {
   color: rgb(77, 77, 82);
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
   margin-bottom: 12px;
+}
+
+.dark-hero .feature-title {
+  color: #e0e0d8;
 }
 
 .feature-icon {
@@ -222,4 +234,8 @@ h1 {
 .feature-description {
   font-size: 14px;
   color: rgb(115 115 122);
+}
+
+.dark-hero .feature-description {
+  color: #9999a1;
 }

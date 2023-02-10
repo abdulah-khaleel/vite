@@ -6,10 +6,19 @@
   padding-top: 5rem;
 }
 
+.dark-sponsors {
+  background-color: #1e1e20;
+}
+
 .fa-heart {
   font-size: 1.5rem;
   color: rgb(170, 162, 162);
   margin-bottom: 1rem;
+}
+
+.dark-sponsors .fa-heart {
+  color: #9999a1;
+  opacity: 90%;
 }
 
 .sponsors--open-source {
@@ -19,6 +28,12 @@
   margin: 0 auto;
   margin-bottom: 2.5rem;
   max-width: 350px;
+}
+
+.dark-sponsors .sponsors--open-source {
+  /* color: #6c6c71; */
+  /* color: #a1a1b7; */
+  color: #9999a1;
 }
 
 .sponsors--container {
@@ -49,6 +64,28 @@
   background-color: rgb(246 246 247);
 }
 
+.dark-sponsors :is(.div1, .div4, ) {
+  background-color: #2e2e2e;
+}
+
+.dark-sponsors
+  :is(
+    .div2,
+    .div3,
+    .div5,
+    .div6,
+    .div7,
+    .div8,
+    .div9,
+    .div10,
+    .div11,
+    .div12,
+    .div13,
+    .div14
+  ) {
+  background-color: #2d2d3f;
+}
+
 /* sponsors only */
 .div2,
 .div3,
@@ -76,6 +113,23 @@
     .div12
   ):hover {
   background-color: rgb(217, 217, 221);
+  transition: 350ms;
+}
+
+.dark-sponsors
+  :where(
+    .div2,
+    .div3,
+    .div5,
+    .div6,
+    .div7,
+    .div8,
+    .div9,
+    .div10,
+    .div11,
+    .div12
+  ):hover {
+  background-color: white;
   transition: 350ms;
 }
 
@@ -186,6 +240,10 @@
   opacity: 70%;
 }
 
+.dark-sponsors .sponsor--title {
+  color: #9c9ca3;
+}
+
 .sponsor--plat img {
   max-width: 192px;
   max-height: 56px;
@@ -201,6 +259,10 @@
   -webkit-transition: all 0.2s ease-in-out;
 }
 
+.dark-sponsors :is(.sponsor--plat, .sponsor--gold) img {
+  filter: grayscale(1) invert(1);
+}
+
 .sponsor--plat:hover,
 .sponsor--gold:hover {
   filter: none;
@@ -214,13 +276,20 @@
   -webkit-transform: scale(1);
 }
 
+.dark-sponsors :is(.sponsor--plat, .sponsor--gold):hover img {
+  /* filter: none; */
+  filter: grayscale(0);
+  /* filter: grayscale(0) invert(1); */
+  /* -webkit-filter: grayscale(0); */
+  /* -webkit-transform: scale(1); */
+}
+
+/* .parent:hover .child{ display:block; } */
+
 .sponsor--gold {
-  /* max-width: 120px;
-  max-height: 36px; */
   display: flex;
   align-items: center;
   justify-content: center;
-  /* text-align: center; */
 }
 
 .sponsor--gold img {
@@ -232,4 +301,34 @@
   margin-bottom: 5rem;
   background-color: white;
   color: rgb(80, 80, 87);
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  border: 1px solid lightgray;
+  transition: 500ms;
 }
+
+.btn-donate:hover {
+  /* color: pink; */
+  color: #f43f5e;
+  border: 1px solid #f43f5e;
+}
+
+.btn-donate {
+  /* background-color: #f6f6f7; */
+  border-radius: 20px;
+  /* border: 1px solid #c9c5c5; */
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+/* .invert:hover {
+  background-color: white;
+  filter: grayscale(1) invert(1);
+} */

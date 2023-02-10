@@ -1,8 +1,8 @@
 import "./Sponsors.css";
 
-function Sponsors() {
+function Sponsors(props) {
   return (
-    <div className="sponsors">
+    <div className={`sponsors ${props.darkMode ? "dark-sponsors" : ""}`}>
       <div className="sponsors--container">
         <i className="far fa-heart"></i>
         <p className="sponsors--open-source">
@@ -55,7 +55,7 @@ function Sponsors() {
             />{" "}
           </div>
           <div className="div10 sponsor--gold">
-            {" "}
+            <div className="sponsor-mask"></div>{" "}
             <img
               src="https://sponsors.vuejs.org/images/prefect_io.svg
 "
@@ -71,16 +71,26 @@ function Sponsors() {
             />
           </div>
           <div className="div12 sponsor--gold">
+            <div className="sponsor-mask"></div>
             <img
               src="https://sponsors.vuejs.org/images/pineview_labs.svg"
               alt=""
             />{" "}
           </div>
-          <div className="div13"> </div>
-          <div className="div14"> </div>
+          <div className="div13 sponsor--gold"> </div>
+          {/* <div className="div14 sponsor--gold"> </div> */}
+          <div className="div99">
+            <div class="invert">
+              <img
+                src="https://sponsors.vuejs.org/images/prefect_io.svg
+"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
       </div>
-      <button className="btn btn-donate">Become a sponsor</button>
+      <button className="btn-donate">Become a sponsor</button>
     </div>
   );
 }
