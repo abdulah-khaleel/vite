@@ -7,14 +7,19 @@ import Sponsors from "./Sponsors";
 import Footer from "./Footer";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [darkMode, setDarkMode] = useState(false);
+
+  function toggleDarkMode() {
+    setDarkMode((prevMode) => !prevMode);
+    console.log("dark mode toggled ..");
+  }
 
   return (
     <div className="App">
-      <Navbar />
-      <Hero />
-      <Sponsors />
-      <Footer />
+      <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <Hero darkMode={darkMode} />
+      <Sponsors darkMode={darkMode} />
+      <Footer darkMode={darkMode} />
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />

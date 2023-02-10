@@ -5,6 +5,10 @@
   /* background: lightgray; */
 }
 
+.dark-hero {
+  background-color: #1e1e20;
+}
+
 .hero--container {
   display: flex;
   flex-direction: row;
@@ -57,7 +61,12 @@ h1 {
 .main--subtitle {
   /* color: #3c3c43eb; */
   color: rgb(115 115 122);
+
   margin-bottom: 1rem;
+}
+
+.dark-hero .main--subtitle {
+  color: #dfdfd7;
 }
 
 .main--body {
@@ -65,6 +74,10 @@ h1 {
   color: #3c3c43b3;
   opacity: 80%;
   margin-bottom: 2rem;
+}
+
+.dark-hero .main--body {
+  color: #9999a0;
 }
 
 .actions-container {
@@ -77,15 +90,36 @@ h1 {
 }
 
 .btn {
-  background-color: #f6f6f7;
+  /* background-color: #f6f6f7; */
   border-radius: 20px;
-  border: 1px solid #c9c5c5;
+  /* border: 1px solid #c9c5c5; */
   font-size: 14px;
   font-weight: 500;
   padding: 10px 20px;
   margin-right: 20px;
   cursor: pointer;
 }
+
+.btn-normal {
+  background-color: #f6f6f7;
+  border: 1px solid #c9c5c5;
+}
+
+.dark-hero .btn-normal {
+  background-color: #313136;
+}
+
+.dark-hero .btn-normal:hover {
+  background-color: #1e1e21;
+}
+
+.dark-hero .btn-normal a {
+  color: white;
+}
+
+/* .dark-hero .btn-normal {
+  background-color: #313136;
+} */
 
 .btn-primary {
   background-color: #747bff;
@@ -122,10 +156,25 @@ h1 {
   /* padding-right: 4rem; */
 }
 
+.dark-hero .background-image {
+  background: darkblue;
+  box-shadow: none;
+
+  background-color: #1e1e20;
+}
+
 .hero--vite-logo {
   margin-left: 3rem;
   height: 330px;
 }
+
+/* .dark-hero .background-image {
+  background-color: blue !important;
+} */
+
+/* .dark-hero .hero--container {
+  background-color: blue !important;
+} */
 
 /* -- FEATURES Section -- */
 

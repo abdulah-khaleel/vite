@@ -4,11 +4,9 @@ import viteLogoBackground from "./assets/logo-background-image.png";
 import Feature from "./Feature";
 import "./Hero.css";
 
-function Hero() {
-  const [count, setCount] = useState(0);
-  const icon = '<i class="fas fa-lightbulb-on"></i>';
+function Hero(props) {
   return (
-    <div className="hero">
+    <div className={`hero ${props.darkMode ? "dark-hero" : ""}`}>
       <div className="hero--container">
         <div className="main">
           <h1 className="main--title">Vite</h1>
@@ -22,11 +20,11 @@ function Hero() {
               {" "}
               <a href="#">Get Started</a>
             </div>
-            <div className="btn">
+            <div className="btn btn-normal">
               {" "}
               <a href="#">Why Vite?</a>{" "}
             </div>
-            <div className="btn">
+            <div className="btn btn-normal">
               {" "}
               <a href="#">View on Github</a>
             </div>
@@ -43,32 +41,32 @@ function Hero() {
       <div className="features-section"></div>
       <div className="features-container">
         <Feature
-          icon={<i class="fas fa-angle-double-right"></i>}
+          icon={<i className="fas fa-angle-double-right"></i>}
           title="Instant Server Start"
           description="On demand file serving over native ESM, no bundling required!"
         />
         <Feature
-          icon={<i class="fas fa-bolt"></i>}
+          icon={<i className="fas fa-bolt"></i>}
           title="Lightning Fast HMR"
           description="Hot Module Replacement (HMR) that stays fast regardless of app size."
         />
         <Feature
-          icon={<i class="fas fa-tools"></i>}
+          icon={<i className="fas fa-tools"></i>}
           title="Rich Features"
           description="Out-of-the-box support for TypeScript, JSX, CSS and more."
         />
         <Feature
-          icon={<i class="fas fa-box-open"></i>}
+          icon={<i className="fas fa-box-open"></i>}
           title="Optimized Build"
           description="Pre-configured Rollup build with multi-page and library mode support."
         />
         <Feature
-          icon={<i class="fas fa-plug"></i>}
+          icon={<i className="fas fa-plug"></i>}
           title="Universal Plugins"
           description="Rollup-superset plugin interface shared between dev and build."
         />
         <Feature
-          icon={<i class="fas fa-key"></i>}
+          icon={<i className="fas fa-key"></i>}
           title="Fully Typed APIs"
           description="Flexible programmatic APIs with full TypeScript typing."
         />

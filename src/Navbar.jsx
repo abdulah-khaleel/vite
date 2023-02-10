@@ -1,13 +1,11 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
+import languageSelector from "./assets/language-selector.svg";
 import viteLogo from "./assets/vite.svg";
 import "./Navbar.css";
 
-function Navbar() {
-  const [count, setCount] = useState(0);
-
+function Navbar(props) {
   return (
-    <div className="navbar">
+    <div className={`navbar ${props.darkMode ? "dark-navbar" : ""}`}>
       <div className="navbar--logo-title-container">
         <img className="navbar--logo" src={viteLogo} alt="react-logo" />
         <p className="navbar--title">Vite</p>
@@ -30,25 +28,33 @@ function Navbar() {
           </li>
           <li className="navbar--item">
             <a href="#">
-              Resources &#160;<i class="fas fa-angle-down"></i>
+              Resources &#160;<i className="fas fa-angle-down"></i>
             </a>
           </li>
           <li className="navbar--item">
             <a href="#">
-              Version &#160;<i class="fas fa-angle-down"></i>
+              Version &#160;<i className="fas fa-angle-down"></i>
             </a>
           </li>
         </ul>
         <span className="navbar--separator">|</span>
-        <p className="navbar--language-selector">
-          EN &#160;<i class="fas fa-angle-down"></i>
-        </p>
+        <div className="navbar--language-selector">
+          <img
+            className="language-selector-icon"
+            src={languageSelector}
+            alt="react-logo"
+          />{" "}
+          &#160;<i className="fas fa-angle-down"></i>
+          {/* EN &#160;<i className="fas fa-angle-down"></i> */}
+        </div>
         <span className="navbar--separator">|</span>
         <div className="toggler">
-          {/* <p className="toggler--light">Light</p> */}
-          <div className="toggler--slider">
+          <p className="toggler--light"></p>
+          <div className="toggler--slider" onClick={props.toggleDarkMode}>
             <div className="toggler--slider--circle">
-              <i class="fas fa-adjust"></i>
+              <p className="toggler--dark"></p>
+
+              <i className="fas fa-adjust"></i>
             </div>
           </div>
           {/* <p className="toggler--dark">Dark</p> */}
