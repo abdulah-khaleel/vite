@@ -79,15 +79,7 @@ function Sponsors(props) {
           </div>
           <div className="div13 sponsor--gold"> </div>
           {/* <div className="div14 sponsor--gold"> </div> */}
-          <div className="div99">
-            <div class="invert">
-              <img
-                src="https://sponsors.vuejs.org/images/prefect_io.svg
-"
-                alt=""
-              />
-            </div>
-          </div>
+          <div className="div14 sponsor--gold"></div>
         </div>
       </div>
       <button className="btn-donate">Become a sponsor</button>

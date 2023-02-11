@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./Footer.css";
 
-function Footer() {
+function Footer(props) {
   const [count, setCount] = useState(0);
   return (
-    <div className="footer">
+    <div className={`footer ${props.darkMode ? "dark-footer" : ""}`}>
       <div className="footer--container">
         <p className="footer--license">
           Released under the MIT License. (55b97113)

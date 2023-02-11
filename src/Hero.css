@@ -10,28 +10,47 @@
 }
 
 .hero--container {
+  /* border: 1px solid green; */
   display: flex;
   flex-direction: row;
-  /* border: 1px solid black; */
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
-  /* padding: 0 50px 0 50px; */
-  /* background: lightblue; */
-  /* padding: 1rem; */
 }
 
 .main {
   max-width: 50%;
   width: 50%;
-  /* background: lightgoldenrodyellow; */
   padding: 1rem;
+  /* border: 1px solid blue; */
 }
 
 .hero--image {
+  justify-self: center;
   max-width: 50%;
   width: 50%;
+  /* border: 4px solid red; */
+  transform: translate(-220px, -40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* GRADIENT BACKGROUND: */
+
+  /* margin: 1rem; */
+  /* padding: 1rem; */
   /* border: 1px solid black; */
   /* background: lightgoldenrodyellow; */
+}
+
+.hero-logo-gradient {
+  position: absolute;
+  background: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
+  filter: blur(62px);
+  opacity: 50%;
+  height: 350px;
+  width: 350px;
+  z-index: -1;
 }
 
 h1 {
@@ -148,19 +167,18 @@ h1 {
 } */
 
 .background-image {
-  background: url(./assets/logo-background-image.png);
+  /* background: url(./assets/logo-background-image.png); */
+  /* border: 1px solid pink; */
+  padding: 1rem;
+  width: 350px;
+  height: 350px;
+  /* background: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%); */
+  /* filter: blur(72px); */
   max-height: 100%;
   max-width: 100%;
   background-size: cover;
-  box-shadow: 0 0 40px 60px white inset;
+  /* box-shadow: 0 0 40px 60px white inset; */
   /* padding-right: 4rem; */
-}
-
-.dark-hero .background-image {
-  background: darkblue;
-  box-shadow: none;
-
-  background-color: #1e1e20;
 }
 
 .hero--vite-logo {

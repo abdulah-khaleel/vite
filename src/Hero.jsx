@@ -36,6 +36,7 @@ function Hero(props) {
             src={viteLogoLarge}
             alt="vite-logo"
           />
+          <div className="hero-logo-gradient"></div>
         </div>
       </div>
       <div className="features-section"></div>

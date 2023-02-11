@@ -8,6 +8,8 @@
 
 .dark-sponsors {
   background-color: #1e1e20;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .fa-heart {
@@ -309,6 +311,11 @@
   cursor: pointer;
   border: 1px solid lightgray;
   transition: 500ms;
+}
+
+.dark-sponsors .btn-donate {
+  color: rgb(153 153 160);
+  background-color: rgb(30 30 32);
 }
 
 .btn-donate:hover {

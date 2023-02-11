@@ -1,6 +1,11 @@
 .footer {
   text-align: center;
-  margin: 2rem 0;
+  padding: 2rem 0;
+  /* margin: 2rem 0; */
   font-size: 14px;
   color: rgb(118 118 123);
+}
+
+.dark-footer {
+  background-color: #1e1e20;
 }
