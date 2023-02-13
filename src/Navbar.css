@@ -6,9 +6,9 @@
 }
 
 .navbar {
+  z-index: 1;
+  /* background: white; */
   height: 70px;
-  /* border: 1px solid orange; */
-  /* border-bottom: 1px solid lightgray; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -17,10 +17,32 @@
   font-size: 14px;
   font-weight: 500;
   color: #3c3c43b3;
+
+  /* Sticky changes: */
+  position: fixed;
+  width: 100%;
+  transition: 0.3s;
+  top: 0;
+  left: 0;
+}
+
+.navbar.sticky {
+  background: white;
+  width: 100%;
+  border-bottom: 1px solid #e7e7e8;
+}
+
+.scrolled + .navbar--logo-title-container {
+  padding: 2rem;
 }
 
 .dark-navbar {
-  background-color: rgb(30 30 32);
+  opacity: 100%;
+}
+
+.dark-navbar.sticky {
+  background-color: #1e1e20;
+  border-bottom: 1px solid #000000;
   opacity: 100%;
 }
 

@@ -1,7 +1,7 @@
 .hero {
   margin: 0 auto;
   /* border: 1px solid blue; */
-  padding: 80px 130px;
+  padding: 125px 130px;
   /* background: lightgray; */
 }
 
@@ -34,6 +34,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 0;
 
   /* GRADIENT BACKGROUND: */
 
@@ -50,7 +51,7 @@
   opacity: 50%;
   height: 350px;
   width: 350px;
-  z-index: -1;
+  z-index: 1;
 }
 
 h1 {

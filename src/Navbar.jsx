@@ -1,12 +1,31 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import languageSelector from "./assets/language-selector.svg";
 import viteLogo from "./assets/vite.svg";
 import "./Navbar.css";
 
 function Navbar(props) {
+  const [scrolled, setScrolled] = useState(false);
+  const [sticky, setSticky] = useState(false);
+
+  function handleScroll() {
+    if (window.scrollY > 0) {
+      setSticky(true);
+    } else {
+      setSticky(false);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  });
+
   return (
-    <div className={`navbar ${props.darkMode ? "dark-navbar" : ""}`}>
-      <div className="navbar--logo-title-container">
+    <div
+      className={`navbar ${sticky ? "sticky" : ""} ${
+        props.darkMode ? "dark-navbar" : ""
+      }`}
+    >
+      <div className="navbar--logo-title-container ">
         <img className="navbar--logo" src={viteLogo} alt="react-logo" />
         <p className="navbar--title">Vite</p>
       </div>

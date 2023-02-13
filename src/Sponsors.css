@@ -278,6 +278,12 @@
   -webkit-transform: scale(1);
 }
 
+.div3:hover img {
+  filter: none;
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1);
+}
+
 .dark-sponsors :is(.sponsor--plat, .sponsor--gold):hover img {
   /* filter: none; */
   filter: grayscale(0);
